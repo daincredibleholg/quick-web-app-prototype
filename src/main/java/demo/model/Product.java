@@ -1,12 +1,14 @@
 package demo.model;
 
 import java.io.Serializable;
+import org.springframework.data.annotation.Id;
 
 /**
  * Our very important and sophisticated data model
  */
 public class Product implements Serializable {
 
+    @Id
     String productId;
     String name;
     String vendor;
